@@ -22,7 +22,7 @@ func Handler(w http.ResponseWriter, r *http.Request) {
 
 		//w.Header().Set("Location", loc) //http://localhost:8080"http://localhost:8080/"
 		//w.WriteHeader(http.StatusTemporaryRedirect)
-		//w.Write([]byte(res))
+		//w.Write([]byte("res"))
 
 		http.Redirect(w, r, loc, http.StatusTemporaryRedirect)
 
